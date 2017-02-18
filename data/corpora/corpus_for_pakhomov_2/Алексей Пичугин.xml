@@ -1,0 +1,812 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?OntoDPSData docID="17449" markupID="3051" OntoTechnologyVersion="2.6.1.79"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:Aux="http://www.abbyy.com/ns/Aux#" xmlns:Basic="http://www.abbyy.com/ns/Basic#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:BasicEntity="http://www.abbyy.com/ns/BasicEntity#" xmlns:Geo="http://www.abbyy.com/ns/Geo#" xmlns:Org="http://www.abbyy.com/ns/Org#">
+	<BasicEntity:Person rdf:nodeID="bnodeC3DBE991-9FF0-4A25-AB37-FBC6E10A24BA">
+		<rdfs:label xml:lang="ru-RU">Муса Вахаев</rdfs:label>
+		<BasicEntity:firstname xml:lang="ru-RU">Муса</BasicEntity:firstname>
+		<BasicEntity:surname xml:lang="ru-RU">Вахаев</BasicEntity:surname>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Basic:named>
+	</BasicEntity:Person>
+	<BasicEntity:Person rdf:nodeID="bnodeFC5D7FE7-3D21-42F3-BB92-4AB92A6C2D2D">
+		<rdfs:label xml:lang="ru-RU">киллер</rdfs:label>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Basic:named>
+	</BasicEntity:Person>
+	<BasicEntity:Person rdf:nodeID="bnode1A666D69-09CD-47D1-A792-E2D6B5F964A6">
+		<rdfs:label xml:lang="ru-RU">Фаиль Садретдинов</rdfs:label>
+		<BasicEntity:firstname xml:lang="ru-RU">Фаиль</BasicEntity:firstname>
+		<BasicEntity:surname xml:lang="ru-RU">Садретдинов</BasicEntity:surname>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Basic:named>
+	</BasicEntity:Person>
+	<BasicEntity:Person rdf:nodeID="bnode0F5203DD-CA71-41AA-9653-225D4608AAFF">
+		<rdfs:label xml:lang="ru-RU">Магомед Дукузов</rdfs:label>
+		<BasicEntity:firstname xml:lang="ru-RU">Магомед</BasicEntity:firstname>
+		<BasicEntity:surname xml:lang="ru-RU">Дукузов</BasicEntity:surname>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Basic:named>
+	</BasicEntity:Person>
+	<BasicEntity:Person rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86">
+		<rdfs:label xml:lang="ru-RU">Алексей Пичугин</rdfs:label>
+		<BasicEntity:firstname xml:lang="ru-RU">Алексей</BasicEntity:firstname>
+		<BasicEntity:surname xml:lang="ru-RU">Пичугин</BasicEntity:surname>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Basic:named>
+	</BasicEntity:Person>
+	<Geo:Capital rdf:about="http://www.abbyy.com/ns/Geo#Minsk">
+		<Basic:identifier xml:lang="ru-RU">Минск</Basic:identifier>
+		<Basic:key_word xml:lang="ru-RU">город</Basic:key_word>
+	</Geo:Capital>
+	<Org:Governmental rdf:nodeID="bnode247E589B-1F59-4A9A-8C9A-69CB72FAFF8C">
+		<rdf:type rdf:resource="http://www.abbyy.com/ns/Org#Department"/>
+		<Basic:identifier xml:lang="ru-RU">ичкерийская разведка</Basic:identifier>
+		<Basic:identifier xml:lang="ru-RU">разведка</Basic:identifier>
+		<rdfs:label xml:lang="ru-RU">ичкерийская разведка</rdfs:label>
+		<Basic:key_word xml:lang="ru-RU">разведка</Basic:key_word>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Basic:named>
+		<Org:parent_organization rdf:nodeID="bnodeD5F18882-2D48-4869-A456-47FA3A2F3672"/>
+	</Org:Governmental>
+	<Org:Media rdf:nodeID="bnode337C7CFA-C298-4379-8AD1-5F49A3EBE0CC">
+		<Basic:identifier xml:lang="ru-RU">Forbes</Basic:identifier>
+		<Basic:identifier xml:lang="ru-RU">журнал Forbes</Basic:identifier>
+		<rdfs:label xml:lang="ru-RU">журнал Forbes</rdfs:label>
+		<Basic:key_word xml:lang="ru-RU">журнал</Basic:key_word>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Basic:named>
+	</Org:Media>
+	<Org:AdministrativeUnit rdf:nodeID="bnodeD5F18882-2D48-4869-A456-47FA3A2F3672">
+		<Basic:identifier xml:lang="ru-RU">Ичкерия</Basic:identifier>
+		<Basic:identifier xml:lang="ru-RU">республика Ичкерия</Basic:identifier>
+		<rdfs:label xml:lang="ru-RU">Ичкерия</rdfs:label>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Basic:named>
+	</Org:AdministrativeUnit>
+	<Geo:Country rdf:about="http://www.abbyy.com/ns/Geo#Russia">
+		<Basic:identifier xml:lang="ru-RU">Россия</Basic:identifier>
+		<Basic:identifier xml:lang="ru-RU">РФ</Basic:identifier>
+		<Basic:key_word xml:lang="ru-RU">страна</Basic:key_word>
+	</Geo:Country>
+	<Org:Governmental rdf:nodeID="bnode59723B70-256E-4E7A-A7CD-F1721E192E74">
+		<Basic:identifier xml:lang="ru-RU">Верховный суд</Basic:identifier>
+		<rdfs:label xml:lang="ru-RU">Верховный суд</rdfs:label>
+		<Basic:key_word xml:lang="ru-RU">суд</Basic:key_word>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Basic:named>
+	</Org:Governmental>
+	<Org:Department rdf:nodeID="bnode0709B3F1-5AD0-4813-8FFD-B7AD3FBA9488">
+		<Basic:identifier xml:lang="ru-RU">психиатрическое отделение</Basic:identifier>
+		<rdfs:label xml:lang="ru-RU">психиатрическое отделение</rdfs:label>
+		<Basic:key_word xml:lang="ru-RU">отделение</Basic:key_word>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Basic:named>
+		<Org:parent_organization rdf:nodeID="bnodeFEB04781-6D5D-435B-BFBD-EE07E7F6D958"/>
+	</Org:Department>
+	<BasicEntity:Person rdf:nodeID="bnodeCDD5BB01-726A-455A-A5C4-A12CC63DE4A9">
+		<rdfs:label xml:lang="ru-RU">Казбек Дукузов</rdfs:label>
+		<BasicEntity:firstname xml:lang="ru-RU">Казбек</BasicEntity:firstname>
+		<BasicEntity:surname xml:lang="ru-RU">Дукузов</BasicEntity:surname>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Basic:named>
+	</BasicEntity:Person>
+	<Geo:Capital rdf:about="http://www.abbyy.com/ns/Geo#Moscow">
+		<Basic:identifier xml:lang="ru-RU">Москва</Basic:identifier>
+		<Basic:key_word xml:lang="ru-RU">город</Basic:key_word>
+	</Geo:Capital>
+	<Org:Medical rdf:nodeID="bnode905FF301-084F-4D06-9F14-781A27750B19">
+		<Basic:identifier xml:lang="ru-RU">больница</Basic:identifier>
+		<rdfs:label xml:lang="ru-RU">больница</rdfs:label>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Basic:named>
+	</Org:Medical>
+	<Org:Governmental rdf:nodeID="bnodeE4F5EB29-8495-4621-B524-1CFCBE62C0E8">
+		<rdf:type rdf:resource="http://www.abbyy.com/ns/Org#Department"/>
+		<Basic:identifier xml:lang="ru-RU">Генпрокуратура</Basic:identifier>
+		<Basic:identifier xml:lang="ru-RU">Генеральная прокуратура</Basic:identifier>
+		<Basic:identifier xml:lang="ru-RU">Генпрокуратура РФ</Basic:identifier>
+		<Basic:identifier xml:lang="ru-RU">прокуратура</Basic:identifier>
+		<rdfs:label xml:lang="ru-RU">Генпрокуратура РФ</rdfs:label>
+		<Basic:key_word xml:lang="ru-RU">прокуратура</Basic:key_word>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Basic:named>
+		<Org:parent_organization rdf:nodeID="bnodeBDE7064E-BDA0-4CEE-9E14-1578274FE0B2"/>
+	</Org:Governmental>
+	<Org:AdministrativeUnit rdf:nodeID="bnodeBDE7064E-BDA0-4CEE-9E14-1578274FE0B2">
+		<Basic:identifier xml:lang="ru-RU">РФ</Basic:identifier>
+		<Basic:identifier xml:lang="ru-RU">Россия</Basic:identifier>
+		<rdfs:label xml:lang="ru-RU">Россия</rdfs:label>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Basic:named>
+	</Org:AdministrativeUnit>
+	<BasicEntity:Person rdf:nodeID="bnodeE3A25F47-52AD-48CD-B2ED-D8D149C0B344">
+		<rdfs:label xml:lang="ru-RU">Магомед Эдильсултанов</rdfs:label>
+		<BasicEntity:firstname xml:lang="ru-RU">Магомед</BasicEntity:firstname>
+		<BasicEntity:surname xml:lang="ru-RU">Эдильсултанов</BasicEntity:surname>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Basic:named>
+	</BasicEntity:Person>
+	<Geo:PartsOfTown rdf:nodeID="bnodeA9E22A48-F183-48D0-8900-0D06E6836E75">
+		<rdf:type rdf:resource="http://www.abbyy.com/ns/Geo#Road"/>
+		<Basic:identifier xml:lang="ru-RU">Фрунзенская</Basic:identifier>
+		<rdfs:label xml:lang="ru-RU">Фрунзенская набережная</rdfs:label>
+		<Basic:key_word xml:lang="ru-RU">набережная</Basic:key_word>
+	</Geo:PartsOfTown>
+	<BasicEntity:Person rdf:nodeID="bnodeA287147E-7763-45AA-B11E-5E79C8B27F09">
+		<rdfs:label xml:lang="ru-RU">Пол Хлебников</rdfs:label>
+		<BasicEntity:firstname xml:lang="ru-RU">Пол</BasicEntity:firstname>
+		<BasicEntity:surname xml:lang="ru-RU">Хлебников</BasicEntity:surname>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Basic:named>
+	</BasicEntity:Person>
+	<BasicEntity:Person rdf:nodeID="bnode69D214FD-8324-4D84-A645-D6D5AF216443">
+		<rdfs:label xml:lang="ru-RU">убийца</rdfs:label>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Basic:named>
+	</BasicEntity:Person>
+	<BasicEntity:Person rdf:nodeID="bnodeCB3CD901-D6EE-4694-8C4F-4E5240B910B0">
+		<rdfs:label xml:lang="ru-RU">Хож-Ахмед Нухаев</rdfs:label>
+		<BasicEntity:firstname xml:lang="ru-RU">Хож-Ахмед</BasicEntity:firstname>
+		<BasicEntity:surname xml:lang="ru-RU">Нухаев</BasicEntity:surname>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Basic:named>
+	</BasicEntity:Person>
+	<Org:Medical rdf:nodeID="bnodeFEB04781-6D5D-435B-BFBD-EE07E7F6D958">
+		<Basic:identifier xml:lang="ru-RU">тюремная больница</Basic:identifier>
+		<rdfs:label xml:lang="ru-RU">тюремная больница</rdfs:label>
+		<Basic:key_word xml:lang="ru-RU">больница</Basic:key_word>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Basic:named>
+	</Org:Medical>
+	<Geo:District rdf:nodeID="bnode621E124D-1082-450F-BB8F-FA322FB1571C">
+		<Basic:identifier xml:lang="ru-RU">Ичкерия</Basic:identifier>
+		<rdfs:label xml:lang="ru-RU">республика Ичкерия</rdfs:label>
+		<Basic:key_word xml:lang="ru-RU">республика</Basic:key_word>
+	</Geo:District>
+	<BasicEntity:Person rdf:nodeID="bnode69D35E11-8574-4891-A38C-C3A251D3D64D">
+		<rdfs:label xml:lang="ru-RU">Джохар Дудаев</rdfs:label>
+		<BasicEntity:firstname xml:lang="ru-RU">Джохар</BasicEntity:firstname>
+		<BasicEntity:surname xml:lang="ru-RU">Дудаев</BasicEntity:surname>
+		<Basic:named rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Basic:named>
+	</BasicEntity:Person>
+	<Aux:TextAnnotations rdf:nodeID="bnode3A6FD9F0-C266-4ABC-BBDA-FE7235488608">
+		<Aux:document_text xml:lang="ru-RU">&lt;title&gt;Пичугин, Алексей&lt;/title&gt; &lt;annotation&gt;Московский риэлтер, в покушении на жизнь которого обвинялся предполагаемый убийца Пола Хлебникова&lt;/annotation&gt; &lt;description&gt;Гражданин России, житель Москвы, риэлтер (по некоторым данным, совершавший незаконные операции с недвижимостью). В 2004 году стал объектом покушения, в организации которого он обвинил московского нотариуса Фаиля Садретдинова. По версии прокуратуры, покушение совершили Казбек Дукузов и Муса Вахаев, обвиненные также в убийстве главного редактора русской версии журнала Forbes Пола Хлебникова.&lt;/description&gt; &lt;body&gt;  Имя Алексея Пичугина, "черного" (то есть незарегитрированного официально) риэлтера по некоторым данным совершавшего незаконные операции с недвижимостью стало появляться в СМИ лишь в 2004 году - спустя почти год после того, как на него было совершено покушение. Само преступление было совершено в Москве в ночь на 11 ноября 2003 года в районе Фрунзенской набережной. Пичугин находился в собственной машине, когда киллер выпустил в него четыре пули. Риэлтер был ранен, но сам добрался до больницы, где ему оказали помощь. В конце лета 2004 года, когда Генпрокуратура РФ арестовала предполагаемых убийц главного редактора русской версии журнала Forbes Пола Хлебникова (журналист был застрелен 9 июля при выходе из здания редакции ), Пичугин опознал в одном из задержанных, Казбеке Дукузове , стрелявшего в него человека. Тогда же, по данным СМИ, маклер впервые заявил, что в его смерти был заинтересован московский нотариус Фаиль Садретдинов. По версии следствия, еще в 2002 году Садретдинов создал в Москве преступное сообщество для совершения вымогательств и убийств по найму. В сообщество вошли Казбек и Магомед Дукузовы , Магомед Эдильсултанов и знакомый Дукузовых Муса Вахаев. Прокуратура посчитала, что именно к этому сообществу и обратился в 2004 году заказчик убийства Хлебникова. Следователи сочли заказчиком убийства Хлебникова Хож-Ахмеда Нухаева - чеченца, который в начале 1990-х годов был осужден за разбой, потом был освобожден тогдашним лидером непризнанной республики Ичкерия Джохаром Дудаевым и стал его заместителем по безопасности, а также - главой ичкерийской разведки. Дукузова и Вахаева следствие называло непосредственными исполнителями. Дукузов был задержан в Минске 17 ноября 2004 года и вскоре экстрадирован в Россию. Спустя два дня в Москве был задержан Вахаев. Обоим, помимо обвинений в убийстве Хлебникова, было предъявлено обвинение в покушении на Пичугина. Садретдинов был арестован в июле 2005 года. 10 января 2006 года начались слушания по делу об убийстве Хлебникова. Слушания проходили в закрытом режиме. Своей вины подсудимые не признали и 6 мая 2006 года суд вынес оправдательный приговор всем троим. 15 мая 2006 года Генеральная прокуратура обжаловала приговор в Верховном суде. 9 ноября 2006 года Верховный суд отменил оправдательный приговор. 19 декабря СМИ сообщили, что Садретдинов пытался повеситься в камере, после чего был отправлен в психиатрическое отделение тюремной больницы. К концу января 2007 года дата начала слушаний по делу о покушении на Пичугина не называлась. Дата новых слушаний по делу об убийстве Хлебникова также еще не была определена. &lt;/body&gt;</Aux:document_text>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeD5E4CEF6-5C30-40B7-B24A-5BCF30A0F9F5">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode81521136-B846-4310-B712-91DF92AF3C97">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode6F5335BB-C16B-400A-A150-0EBD4591409C">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</Aux:annotation_end>
+				<Aux:instance rdf:resource="http://www.abbyy.com/ns/Geo#Moscow"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode700B0534-699B-437F-A08D-489D9322168B">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">62</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode8739CE90-9019-4E19-8B5A-82284DBA6E93">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">93</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode1D9B2DD6-F577-4E25-97DF-BABC0EB2108B">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">119</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">125</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode69D214FD-8324-4D84-A645-D6D5AF216443"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode7D227237-2E50-48D1-8724-166D07EAD10E">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">126</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">141</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeA287147E-7763-45AA-B11E-5E79C8B27F09"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeF94EDC5A-AE6F-49A5-809E-3176F04D39D6">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">168</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">177</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeFCCDE94C-536F-42E7-AB08-C8E08A0BC023">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">178</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">184</Aux:annotation_end>
+				<Aux:instance rdf:resource="http://www.abbyy.com/ns/Geo#Russia"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode8F591D2F-19FA-43E2-9767-A98D95822644">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">178</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">184</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeBDE7064E-BDA0-4CEE-9E14-1578274FE0B2"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeC95D3A9F-B136-406C-B20C-1A111B44741D">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">186</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">192</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode177421DF-EFD1-43BD-8229-54CE7A9808E6">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">193</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">199</Aux:annotation_end>
+				<Aux:instance rdf:resource="http://www.abbyy.com/ns/Geo#Moscow"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode31EA08DD-6294-497A-818F-3595E2E67BEE">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">201</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">208</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeEC73D332-CE2C-4085-8535-AC6A01A17465">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">341</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">343</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode8416B20D-9825-4C3D-96F6-6697B254C586">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">352</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">363</Aux:annotation_end>
+				<Aux:instance rdf:resource="http://www.abbyy.com/ns/Geo#Moscow"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode6EEDDFE6-3508-4028-A1F0-A719C72AEF48">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">374</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">392</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode1A666D69-09CD-47D1-A792-E2D6B5F964A6"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeF5BFEF1A-B6CF-45F8-8BB1-F1FED389E384">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">437</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">451</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeCDD5BB01-726A-455A-A5C4-A12CC63DE4A9"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode48F90019-2733-4CA5-9875-9690C5B66BFC">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">454</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">465</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeC3DBE991-9FF0-4A25-AB37-FBC6E10A24BA"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeA01F005F-A25D-482E-BB3F-A4FB99D757F3">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">514</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">521</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeBDE7064E-BDA0-4CEE-9E14-1578274FE0B2"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeA43F7212-E6CC-4B2B-91F2-7F9B658CE1D8">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">514</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">521</Aux:annotation_end>
+				<Aux:instance rdf:resource="http://www.abbyy.com/ns/Geo#Russia"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode129761DF-3269-404B-B982-57FA5DDBBD36">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">529</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">543</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode337C7CFA-C298-4379-8AD1-5F49A3EBE0CC"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeFDC8A316-9EB7-4931-A947-13B3F69EA99E">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">544</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">559</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeA287147E-7763-45AA-B11E-5E79C8B27F09"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeA3B1E4C1-BDEB-4F71-B3E5-DEFA3830A04E">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">587</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">603</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode02319CCA-51A8-40B6-ACFE-10888B67C479">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">813</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">817</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode139D93FA-BF75-47ED-BA6B-7D9AF096090E">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">879</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">885</Aux:annotation_end>
+				<Aux:instance rdf:resource="http://www.abbyy.com/ns/Geo#Moscow"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode0F13C058-A7FC-43B2-A8D7-66D3BC225B06">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">925</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">947</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeA9E22A48-F183-48D0-8900-0D06E6836E75"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode89A6A492-AB38-4A9A-975B-3275B42C3A33">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">949</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">956</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode6ACD8BD2-0FD8-462C-A7F8-4C50C80BAED1">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">995</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1001</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeFC5D7FE7-3D21-42F3-BB92-4AB92A6C2D2D"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode4D809150-206B-4914-BF33-45CB7CB9DDB7">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1013</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1017</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode0331522E-39D9-4F80-AD9C-25CA60039EB2">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1031</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1038</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode7970BE9A-0FAC-41BC-A97B-20F6C09191AA">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1053</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1056</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode5A3E75DF-9F19-4368-B695-F4D014659B6A">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1069</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1077</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode905FF301-084F-4D06-9F14-781A27750B19"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeC3703E1A-C88C-4ACE-9BC6-7511AE1E9E1D">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1079</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1082</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode905FF301-084F-4D06-9F14-781A27750B19"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeE9A1453F-1B5A-4DDA-916C-97BE5649EFB1">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1083</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1086</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeEE860F05-D5D0-4DA8-82B2-72C218F97B35">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1133</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1150</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeE4F5EB29-8495-4621-B524-1CFCBE62C0E8"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode3A8AFF77-2788-46BA-9C2A-139E78B1CB63">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1148</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1150</Aux:annotation_end>
+				<Aux:instance rdf:resource="http://www.abbyy.com/ns/Geo#Russia"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode6F2690DE-29DB-4098-B104-C376D09BD48B">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1148</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1150</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeBDE7064E-BDA0-4CEE-9E14-1578274FE0B2"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode39D7A4DA-EA88-4D14-BB17-429C5F512D79">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1202</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1209</Aux:annotation_end>
+				<Aux:instance rdf:resource="http://www.abbyy.com/ns/Geo#Russia"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode4A6A3050-5DAF-4879-900E-9081959597A1">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1202</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1209</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeBDE7064E-BDA0-4CEE-9E14-1578274FE0B2"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode77E4FC93-2C12-4BAE-A38E-7055F6CC0407">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1217</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1231</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode337C7CFA-C298-4379-8AD1-5F49A3EBE0CC"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeA1A22760-FECA-4EB9-9086-8EFD59CC8E75">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1232</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1247</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeA287147E-7763-45AA-B11E-5E79C8B27F09"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode1832C7AE-37DE-4607-AE6F-6A87C6CEF668">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1249</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1258</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeA287147E-7763-45AA-B11E-5E79C8B27F09"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeFBA229F8-82FE-4755-9056-7B1E7937D600">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1313</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1320</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode2F1344F8-6D71-49CC-9490-141D5F45E108">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1353</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1369</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeCDD5BB01-726A-455A-A5C4-A12CC63DE4A9"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode358C738D-AF3F-4C11-A854-B2DFBD230F47">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1386</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1390</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode44A0D108-C7BB-4B1D-930F-5E5A8FAC7DD4">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1426</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1432</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeF7636C17-B6D5-4D49-807F-CC5BCDD205DA">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1455</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1458</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode2E012591-9AB9-42D8-8C6E-D7C17D063226">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1484</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1494</Aux:annotation_end>
+				<Aux:instance rdf:resource="http://www.abbyy.com/ns/Geo#Moscow"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode7CC0CCFA-DE6A-4ECE-8044-723291316BBD">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1504</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1521</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode1A666D69-09CD-47D1-A792-E2D6B5F964A6"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeEB5AB188-6D29-443C-9639-7FAE182DA775">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1560</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1571</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode1A666D69-09CD-47D1-A792-E2D6B5F964A6"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode1C28A9AA-82CC-4FFA-BA33-7C7FAC9A6B78">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1581</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1587</Aux:annotation_end>
+				<Aux:instance rdf:resource="http://www.abbyy.com/ns/Geo#Moscow"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode41C7241A-7028-422B-912C-2426CD826CDB">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1678</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1684</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeCDD5BB01-726A-455A-A5C4-A12CC63DE4A9"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode29BDE452-D727-47FF-8E81-21E345B41E15">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1687</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1703</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode0F5203DD-CA71-41AA-9653-225D4608AAFF"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode8A2FB2FE-D77A-40A1-BB3D-87EA40B10D89">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1706</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1727</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeE3A25F47-52AD-48CD-B2ED-D8D149C0B344"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeA51DDDF0-0975-41BA-AD47-A50FED328A1C">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1739</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1748</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode0F5203DD-CA71-41AA-9653-225D4608AAFF"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeDD4DE374-1792-4726-94E6-E4941AF2B217">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1739</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1748</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeCDD5BB01-726A-455A-A5C4-A12CC63DE4A9"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode51A0EEA4-E732-4F50-8003-7D35B4381BA9">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1749</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1760</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeC3DBE991-9FF0-4A25-AB37-FBC6E10A24BA"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode1083DF73-8803-4FD8-BC69-28FF739AD282">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1762</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1773</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeE4F5EB29-8495-4621-B524-1CFCBE62C0E8"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode59D7BA36-E1BB-45F3-8BA3-7BE6F29D6A5E">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1857</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1867</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeA287147E-7763-45AA-B11E-5E79C8B27F09"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeA7C5E3C0-4209-4B67-98F4-F3AF84FCAFD5">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1907</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1917</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeA287147E-7763-45AA-B11E-5E79C8B27F09"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode728BAE26-CA0B-418F-960E-EB452743767D">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1918</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1936</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeCB3CD901-D6EE-4694-8C4F-4E5240B910B0"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeAB35A0B8-67ED-44EF-8CC0-E3F2CD492A74">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1948</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1955</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeCB3CD901-D6EE-4694-8C4F-4E5240B910B0"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode192B6402-11E4-40D8-887A-9689E7C48B64">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2053</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2071</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode621E124D-1082-450F-BB8F-FA322FB1571C"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeF41F3A5E-EDF0-4141-80DF-209213459BAC">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2053</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2071</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeD5F18882-2D48-4869-A456-47FA3A2F3672"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeC11D553B-166D-4DA5-B268-4227415A20BF">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2072</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2089</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode69D35E11-8574-4891-A38C-C3A251D3D64D"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode1699FE41-0BB8-42A6-A971-D74AC092BCB5">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2097</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2100</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode69D35E11-8574-4891-A38C-C3A251D3D64D"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode71BBB466-DF57-4584-B9A2-2FE77F39E469">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2148</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2168</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode247E589B-1F59-4A9A-8C9A-69CB72FAFF8C"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode6796F4A7-D0C8-433D-8409-B1BD70CFBC07">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2148</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2159</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode621E124D-1082-450F-BB8F-FA322FB1571C"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode87C21366-AC47-43A4-97B5-DEADDEFE471A">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2148</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2159</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeD5F18882-2D48-4869-A456-47FA3A2F3672"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode3F3816BF-7AF8-4366-A69B-48B46C0B0173">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2170</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2178</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode0F5203DD-CA71-41AA-9653-225D4608AAFF"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode5CE1CC76-D50C-4303-84FF-C86A2D58F777">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2181</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2188</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeC3DBE991-9FF0-4A25-AB37-FBC6E10A24BA"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeFDDF297A-B177-4C2A-A09C-EDF11E46D45E">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2241</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2248</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode0F5203DD-CA71-41AA-9653-225D4608AAFF"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode57468221-12C8-4F6F-87FF-D72DEFC97638">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2264</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2270</Aux:annotation_end>
+				<Aux:instance rdf:resource="http://www.abbyy.com/ns/Geo#Minsk"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeC297703E-10E8-4A2E-9177-F76AAC9C4BF6">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2316</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2322</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeBDE7064E-BDA0-4CEE-9E14-1578274FE0B2"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeD6F55B61-40EC-4BE7-B04E-F1CB2DF166D4">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2316</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2322</Aux:annotation_end>
+				<Aux:instance rdf:resource="http://www.abbyy.com/ns/Geo#Russia"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeF18BF973-C0D7-47D3-B305-0A6636ABB4F4">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2341</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2347</Aux:annotation_end>
+				<Aux:instance rdf:resource="http://www.abbyy.com/ns/Geo#Moscow"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeDFD352B7-C657-4B6A-98C1-9B03941FEE46">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2361</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2367</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeC3DBE991-9FF0-4A25-AB37-FBC6E10A24BA"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode796A16A4-FC4A-4557-B548-0615EAABA0E4">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2369</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2374</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode0F5203DD-CA71-41AA-9653-225D4608AAFF"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode7C2BBACE-DED8-4D6F-8D7A-951B43322D17">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2369</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2374</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeC3DBE991-9FF0-4A25-AB37-FBC6E10A24BA"/>
+				<Aux:annotation_tag xml:lang="en-US">ref</Aux:annotation_tag>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeC5E2FC08-84B8-486B-A181-A5D0716EC634">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2404</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2414</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeA287147E-7763-45AA-B11E-5E79C8B27F09"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode02459F71-EF4A-48FF-9692-B4B9EA5EF7CF">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2458</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2466</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeD1EA2F76-B9CB-4083-B589-C2951E113B6D">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2468</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2479</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode1A666D69-09CD-47D1-A792-E2D6B5F964A6"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeC0DF691F-5A76-4E61-A94A-BBD0B40575A0">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2570</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2580</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeA287147E-7763-45AA-B11E-5E79C8B27F09"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode367774F0-DC22-4D45-90B0-C5227EB608C1">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2735</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2758</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeE4F5EB29-8495-4621-B524-1CFCBE62C0E8"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeB82ECF98-A670-4A26-B7CD-E1DE71D24021">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2781</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2795</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode59723B70-256E-4E7A-A7CD-F1721E192E74"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode6AD90F24-3442-419D-AD54-E840E7DDBC28">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2816</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2829</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode59723B70-256E-4E7A-A7CD-F1721E192E74"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeA78B7C19-1C55-4A2F-A381-2A5F0F454919">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2892</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2903</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode1A666D69-09CD-47D1-A792-E2D6B5F964A6"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode56BDE787-3199-4A11-AAD4-F99E72F12E26">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2960</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2985</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode0709B3F1-5AD0-4813-8FFD-B7AD3FBA9488"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode0FEFDB01-6104-4D3F-8611-C9679D8D753A">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2986</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3003</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeFEB04781-6D5D-435B-BFBD-EE07E7F6D958"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnodeB644A054-5F7E-4B2F-B0AF-8DE87BB0D52B">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3074</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3082</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnode4715CB97-21D8-46ED-8EAB-9E44584D4B86"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+		<Aux:annotation>
+			<Aux:InstanceAnnotation rdf:nodeID="bnode8D7CA6A7-2F7C-41C9-850E-2B1A41A2449E">
+				<Aux:annotation_start rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3138</Aux:annotation_start>
+				<Aux:annotation_end rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3148</Aux:annotation_end>
+				<Aux:instance rdf:nodeID="bnodeA287147E-7763-45AA-B11E-5E79C8B27F09"/>
+			</Aux:InstanceAnnotation>
+		</Aux:annotation>
+	</Aux:TextAnnotations>
+</rdf:RDF>
