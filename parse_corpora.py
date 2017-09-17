@@ -14,6 +14,9 @@ annotation_end_tag = '{http://www.abbyy.com/ns/Aux#}annotation_end'
 annotation_instance_tag = '{http://www.abbyy.com/ns/Aux#}instance'
 document_text_tag = '{http://www.abbyy.com/ns/Aux#}document_text'
 
+orig_file = open('parsed/orig.txt', 'w')
+norm_file = open('parsed/norm.txt', 'w')
+
 
 # write to orig.txt and norm.txt
 def parse_file(file):
@@ -51,9 +54,6 @@ def parse_file(file):
             print(value, file=orig_file)
             print(norm_with_node_id[key], file=norm_file)
 
-
-orig_file = open('parsed/orig.txt', 'w')
-norm_file = open('parsed/norm.txt', 'w')
 
 for r, subdirs, files in os.walk('data/corpora'):
     for filename in files:
