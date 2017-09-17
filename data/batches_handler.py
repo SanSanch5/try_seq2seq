@@ -14,22 +14,19 @@ class DatasetPart:
 
 
 class Dataset:
-    data_file = "../parsed/orig.txt"
-    labels_file = "../parsed/norm.txt"
+    def __init__(self, path_to_parsed_files):
+        data_file = os.path.join(path_to_parsed_files, "orig.txt")
+        labels_file = os.path.join(path_to_parsed_files, "norm.txt")
 
-    train = None
-    test = None
-
-    def __init__(self):
-        if os.path.isfile(self.data_file) is False:
+        if os.path.isfile(os.path.abspath(data_file)) is False:
             raise ValueError('Missed parsed corpora')
-        if os.path.isfile(self.labels_file) is False:
+        if os.path.isfile(os.path.abspath(labels_file)) is False:
             raise ValueError('Missed parsed corpora')
 
-        with open(self.data_file) as f:
+        with open(data_file) as f:
             data = f.readlines()
 
-        with open(self.labels_file) as f:
+        with open(labels_file) as f:
             labels = f.readlines()
 
         data = [x.strip() for x in data]
