@@ -24,3 +24,5 @@ for d, l in list(zip(*dataset.train.next_batch(batch_size_to_print))):
 print()
 for d, l in list(zip(*dataset.test.next_batch(batch_size_to_print))):
     print(d, "->", l)
+
+dataset.save_all()

@@ -18,6 +18,7 @@ class DatasetPart:
 
 class Dataset:
     def __init__(self, path_to_parsed_files):
+        self.path_to_parsed_files = path_to_parsed_files
         data_file = os.path.join(path_to_parsed_files, "orig.txt")
         labels_file = os.path.join(path_to_parsed_files, "norm.txt")
 
@@ -41,3 +42,31 @@ class Dataset:
         training_data_size = round(data_size * TRAINING_DATA_KOEF)
         self.train = DatasetPart(data[:training_data_size], labels[:training_data_size])
         self.test = DatasetPart(data[training_data_size:], labels[training_data_size:])
+
+    def save_train(self):
+        train_data_file = os.path.join(self.path_to_parsed_files, "train.data.txt")
+        train_labels_file = os.path.join(self.path_to_parsed_files, "train.labels.txt")
+
+        with open(train_data_file, "w") as f:
+            for line in self.train.data:
+                print(line, file=f)
+
+        with open(train_labels_file, "w") as f:
+            for line in self.train.labels:
+                print(line, file=f)
+
+    def save_test(self):
+        test_data_file = os.path.join(self.path_to_parsed_files, "test.data.txt")
+        test_labels_file = os.path.join(self.path_to_parsed_files, "test.labels.txt")
+
+        with open(test_data_file, "w") as f:
+            for line in self.test.data:
+                print(line, file=f)
+
+        with open(test_labels_file, "w") as f:
+            for line in self.test.labels:
+                print(line, file=f)
+
+    def save_all(self):
+        self.save_train()
+        self.save_test()
