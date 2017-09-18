@@ -10,7 +10,10 @@ class DatasetPart:
         self.labels = labels
 
     def next_batch(self, batch_size):
-        return random.sample(zip(self.data, self.labels), batch_size)
+        common_list = list(zip(self.data, self.labels))
+        sample = random.sample(common_list, batch_size)
+        zipped_sample = list(zip(*sample))
+        return zipped_sample
 
 
 class Dataset:
@@ -37,4 +40,4 @@ class Dataset:
 
         training_data_size = round(data_size * TRAINING_DATA_KOEF)
         self.train = DatasetPart(data[:training_data_size], labels[:training_data_size])
-        self.test = DatasetPart(labels[training_data_size:], labels[training_data_size:])
+        self.test = DatasetPart(data[training_data_size:], labels[training_data_size:])
