@@ -17,6 +17,10 @@ import tensorflow as tf
 # The paths of RNNCell or rnn functions are too long.
 from tensorflow.contrib.legacy_seq2seq.python.ops import *
 
+from data.batches_handler import Dataset
+
+dataset = Dataset("parsed")
+
 enc_sentence_length = 10
 dec_sentence_length = 10
 batch_size = 4
@@ -48,9 +52,6 @@ print(all_input_sentences)
 def tokenizer(sentence):
     tokens = re.findall(r"[\w]+|[^\s\w]", sentence)
     return tokens
-
-# Example
-tokenizer('Hello world?? "sdfs%@#%')
 
 
 def build_vocab(sentences, is_target=False, max_vocab_size=None):
@@ -107,14 +108,6 @@ def sent2idx(sent, vocab=enc_vocab, max_sentence_length=enc_sentence_length, is_
         return [0] + [token2idx(token, vocab) for token in tokens] + [1] * pad_length
     else:
         return [token2idx(token, vocab) for token in tokens] + [0] * pad_length, current_length
-
-# Enc Example
-print('Hi What is your name?')
-print(sent2idx('Hi What is your name?'))
-
-# Dec Example
-print('Hi this is Jaemin.')
-print(sent2idx('Hi this is Jaemin.', vocab=dec_vocab, max_sentence_length=dec_sentence_length, is_target=True))
 
 
 def idx2token(idx, reverse_vocab):
@@ -252,33 +245,10 @@ with tf.Session() as sess:
             epoch_loss += batch_loss
             all_preds.append(batch_preds)
 
-        # Logging every 400 epochs
+        # Logging every 1000 epochs
         if epoch % 1000 == 0:
             print('Epoch', epoch)
-            for input_batch, target_batch, batch_preds in zip(input_batches, target_batches, all_preds):
-                for input_sent, target_sent, pred in zip(input_batch, target_batch, batch_preds):
-                    print('\t', input_sent)
-                    print('\t => ', idx2sent(pred, reverse_vocab=dec_reverse_vocab))
-                    print('\tCorrent answer:', target_sent)
             print('\tepoch loss: {:.2f}\n'.format(epoch_loss))
-
-    input_batch = ["Hi!", "What is your favorite programming language?", "What beer do you want?", "See you."]
-    input_token_indices = []
-    target_token_indices = []
-    sentence_lengths = []
-    for input_sent in input_batch:
-        input_sent, sent_len = sent2idx(input_sent)
-        input_token_indices.append(input_sent)
-        sentence_lengths.append(sent_len)
-    for target_sent in input_batch:
-        target_token_indices.append(
-            sent2idx(target_sent, is_target=True))
-    res = sess.run([predictions], feed_dict={
-        enc_inputs: input_token_indices,
-        sequence_lengths: sentence_lengths,
-        dec_inputs: target_token_indices
-    }
-                   )
 
 preds = res[0]
 for input_sent, pred in zip(input_batch, preds):
