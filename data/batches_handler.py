@@ -42,6 +42,8 @@ class Dataset:
         training_data_size = round(data_size * TRAINING_DATA_KOEF)
         self.train = DatasetPart(data[:training_data_size], labels[:training_data_size])
         self.test = DatasetPart(data[training_data_size:], labels[training_data_size:])
+        self.data = data
+        self.labels = labels
 
     def save_train(self):
         train_data_file = os.path.join(self.path_to_parsed_files, "train.data.txt")

@@ -16,37 +16,11 @@ import tensorflow as tf
 
 # The paths of RNNCell or rnn functions are too long.
 from tensorflow.contrib.legacy_seq2seq.python.ops import *
+from datetime import datetime
+import os.path
 
 from data.batches_handler import Dataset
-
-dataset = Dataset("parsed")
-
-enc_sentence_length = 10
-dec_sentence_length = 10
-batch_size = 4
-
-input_batches = [
-    ['Hi What is your name?', 'Nice to meet you!'],
-    ['Which programming language do you use?', 'See you later.'],
-    ['Where do you live?', 'What is your major?'],
-    ['What do you want to drink?', 'What is your favorite beer?']]
-
-target_batches = [
-    ['Hi this is Jaemin.', 'Nice to meet you too!'],
-    ['I like Python.', 'Bye Bye.'],
-    ['I live in Seoul, South Korea.', 'I study industrial engineering.'],
-    ['Beer please!', 'Leffe brown!']]
-
-all_input_sentences = []
-for input_batch in input_batches:
-    all_input_sentences.extend(input_batch)
-
-all_target_sentences = []
-for target_batch in target_batches:
-    all_target_sentences.extend(target_batch)
-
-# Example
-print(all_input_sentences)
+from settings import *
 
 
 def tokenizer(sentence):
@@ -86,18 +60,14 @@ def build_vocab(sentences, is_target=False, max_vocab_size=None):
     return vocab, reverse_vocab, max_vocab_size
 
 
-# Example
-pprint(build_vocab(all_input_sentences))
-
-enc_vocab, enc_reverse_vocab, enc_vocab_size = build_vocab(all_input_sentences)
-dec_vocab, dec_reverse_vocab, dec_vocab_size = build_vocab(all_target_sentences, is_target=True)
-
-
 def token2idx(word, vocab):
     return vocab[word]
 
-for token in tokenizer('Nice to meet you!'):
-    print(token, token2idx(token, enc_vocab))
+
+dataset = Dataset("parsed.bak")
+
+enc_vocab, enc_reverse_vocab, enc_vocab_size = build_vocab(dataset.data)
+dec_vocab, dec_reverse_vocab, dec_vocab_size = build_vocab(dataset.labels, is_target=True)
 
 
 def sent2idx(sent, vocab=enc_vocab, max_sentence_length=enc_sentence_length, is_target=False):
@@ -117,13 +87,6 @@ def idx2token(idx, reverse_vocab):
 def idx2sent(indices, reverse_vocab=dec_reverse_vocab):
     return " ".join([idx2token(idx, reverse_vocab) for idx in indices])
 
-n_epoch = 2001
-n_enc_layer = 3
-n_dec_layer = 3
-hidden_size = 30
-
-enc_emb_size = 30
-dec_emb_size = 30
 
 tf.reset_default_graph()
 
@@ -209,48 +172,50 @@ loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(
 
 # training_op = tf.train.AdamOptimizer(learning_rate=0.0001).minimize(loss)
 training_op = tf.train.RMSPropOptimizer(learning_rate=0.0001).minimize(loss)
+init_op = tf.global_variables_initializer()
 
 with tf.Session() as sess:
-    sess.run(tf.global_variables_initializer())
+    sess.run(init_op)
     loss_history = []
     for epoch in range(n_epoch):
-
         all_preds = []
         epoch_loss = 0
-        for input_batch, target_batch in zip(input_batches, target_batches):
-            input_token_indices = []
-            target_token_indices = []
-            sentence_lengths = []
 
-            for input_sent in input_batch:
-                input_sent, sent_len = sent2idx(input_sent)
-                input_token_indices.append(input_sent)
-                sentence_lengths.append(sent_len)
+        input_token_indices = []
+        target_token_indices = []
+        sentence_lengths = []
+        for input_s, target_s in list(zip(*dataset.train.next_batch(batch_size))):
+            input_sent, sent_len = sent2idx(input_s)
+            target_sent = sent2idx(target_s,
+                                   vocab=dec_vocab,
+                                   max_sentence_length=dec_sentence_length,
+                                   is_target=True)
+            if sent_len > enc_sentence_length or len(target_sent) > dec_sentence_length + 1:
+                print("The pair %s -> %s has a shape (%d, %d) bigger then (%d, %d) available" %
+                      (input_s, target_s, sent_len, len(target_sent), enc_sentence_length, dec_sentence_length+1))
+                continue
 
-            for target_sent in target_batch:
-                target_token_indices.append(
-                    sent2idx(target_sent,
-                             vocab=dec_vocab, max_sentence_length=dec_sentence_length, is_target=True))
+            input_token_indices.append(input_sent)
+            sentence_lengths.append(sent_len)
+            target_token_indices.append(target_sent)
 
-            # Evaluate three operations in the graph
-            # => predictions, loss, training_op(optimzier)
-            batch_preds, batch_loss, _ = sess.run(
-                [predictions, loss, training_op],
-                feed_dict={
-                    enc_inputs: input_token_indices,
-                    sequence_lengths: sentence_lengths,
-                    dec_inputs: target_token_indices
-                })
-            loss_history.append(batch_loss)
-            epoch_loss += batch_loss
-            all_preds.append(batch_preds)
+        # Evaluate three operations in the graph
+        # => predictions, loss, training_op(optimzier)
+        batch_preds, batch_loss, _ = sess.run(
+            [predictions, loss, training_op],
+            feed_dict={
+                enc_inputs: input_token_indices,
+                sequence_lengths: sentence_lengths,
+                dec_inputs: target_token_indices
+            })
+        loss_history.append(batch_loss)
+        epoch_loss += batch_loss
+        all_preds.append(batch_preds)
 
-        # Logging every 1000 epochs
-        if epoch % 1000 == 0:
-            print('Epoch', epoch)
-            print('\tepoch loss: {:.2f}\n'.format(epoch_loss))
+        # # Logging every 100 epochs
+        # if epoch % 100 == 0:
+        print('[%s] Epoch %i loss: %.2f' % (str(datetime.now()), epoch, epoch_loss))
+        # print('\tepoch loss: {:.2f}\n'.format(epoch_loss))
 
-preds = res[0]
-for input_sent, pred in zip(input_batch, preds):
-    print('\t', input_sent)
-    print('\t => ', idx2sent(pred, reverse_vocab=dec_reverse_vocab))
+    saver = tf.train.Saver()
+    saver.save(sess, saved_model_file)
