@@ -1,92 +1,18 @@
-# https://github.com/j-min/tf_tutorial_plus/tree/master/RNN_seq2seq
-# To plot learning curve graph
-import matplotlib.pyplot as plt
-
-# for pretty print
-from pprint import pprint
-
-# for tokenizer
-import re
-
-# for word counter in vocabulary dictionary
-from collections import Counter
-
 # TensorFlow of Course :)
 import tensorflow as tf
 
 # The paths of RNNCell or rnn functions are too long.
-from tensorflow.contrib.legacy_seq2seq.python.ops import *
 from datetime import datetime
 import os.path
 
 from data.batches_handler import Dataset
 from settings import *
-
-
-def tokenizer(sentence):
-    tokens = re.findall(r"[\w]+|[^\s\w]", sentence)
-    return tokens
-
-
-def build_vocab(sentences, is_target=False, max_vocab_size=None):
-    word_counter = Counter()
-    vocab = dict()
-    reverse_vocab = dict()
-
-    for sentence in sentences:
-        tokens = tokenizer(sentence)
-        word_counter.update(tokens)
-
-    if max_vocab_size is None:
-        max_vocab_size = len(word_counter)
-
-    if is_target:
-        vocab['_GO'] = 0
-        vocab['_PAD'] = 1
-        vocab_idx = 2
-        for key, value in word_counter.most_common(max_vocab_size):
-            vocab[key] = vocab_idx
-            vocab_idx += 1
-    else:
-        vocab['_PAD'] = 0
-        vocab_idx = 1
-        for key, value in word_counter.most_common(max_vocab_size):
-            vocab[key] = vocab_idx
-            vocab_idx += 1
-
-    for key, value in vocab.items():
-        reverse_vocab[value] = key
-
-    return vocab, reverse_vocab, max_vocab_size
-
-
-def token2idx(word, vocab):
-    return vocab[word]
-
+from lib.utils import *
 
 dataset = Dataset("parsed.bak")
 
 enc_vocab, enc_reverse_vocab, enc_vocab_size = build_vocab(dataset.data)
 dec_vocab, dec_reverse_vocab, dec_vocab_size = build_vocab(dataset.labels, is_target=True)
-
-
-def sent2idx(sent, vocab=enc_vocab, max_sentence_length=enc_sentence_length, is_target=False):
-    tokens = tokenizer(sent)
-    current_length = len(tokens)
-    pad_length = max_sentence_length - current_length
-    if is_target:
-        return [0] + [token2idx(token, vocab) for token in tokens] + [1] * pad_length
-    else:
-        return [token2idx(token, vocab) for token in tokens] + [0] * pad_length, current_length
-
-
-def idx2token(idx, reverse_vocab):
-    return reverse_vocab[idx]
-
-
-def idx2sent(indices, reverse_vocab=dec_reverse_vocab):
-    return " ".join([idx2token(idx, reverse_vocab) for idx in indices])
-
 
 tf.reset_default_graph()
 
@@ -174,18 +100,22 @@ loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(
 training_op = tf.train.RMSPropOptimizer(learning_rate=0.0001).minimize(loss)
 init_op = tf.global_variables_initializer()
 
+saver = tf.train.Saver()
+
 with tf.Session() as sess:
-    sess.run(init_op)
+    if os.path.isfile('model/checkpoint'):
+        # do restore
+        saver.restore(sess, saved_model_file)
+    else:
+        sess.run(init_op)
+
     loss_history = []
     for epoch in range(n_epoch):
-        all_preds = []
-        epoch_loss = 0
-
         input_token_indices = []
         target_token_indices = []
         sentence_lengths = []
         for input_s, target_s in list(zip(*dataset.train.next_batch(batch_size))):
-            input_sent, sent_len = sent2idx(input_s)
+            input_sent, sent_len = sent2idx(input_s, enc_vocab)
             target_sent = sent2idx(target_s,
                                    vocab=dec_vocab,
                                    max_sentence_length=dec_sentence_length,
@@ -209,13 +139,15 @@ with tf.Session() as sess:
                 dec_inputs: target_token_indices
             })
         loss_history.append(batch_loss)
-        epoch_loss += batch_loss
-        all_preds.append(batch_preds)
+        accuracy = calculate_accuracy(batch_preds, target_token_indices)
 
-        # # Logging every 100 epochs
-        # if epoch % 100 == 0:
-        print('[%s] Epoch %i loss: %.2f' % (str(datetime.now()), epoch, epoch_loss))
-        # print('\tepoch loss: {:.2f}\n'.format(epoch_loss))
+        log_str = '[%s] Epoch %i: loss = %.2f accuracy = %.2f' % (str(datetime.now()), epoch, batch_loss, accuracy)
+        print(log_str)
+        with open(log_file, "a") as f:
+            f.write(log_str)
 
-    saver = tf.train.Saver()
+        # Saving every 100 epochs
+        if epoch % 100 == 0:
+            saver.save(sess, saved_model_file)
+
     saver.save(sess, saved_model_file)
