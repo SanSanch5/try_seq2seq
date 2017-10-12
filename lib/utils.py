@@ -67,8 +67,8 @@ def idx2sent(indices, reverse_vocab):
 
 
 def calculate_accuracy(preds, labels):
-    batch_size = float(len(preds))
+    batch_size = len(preds)
     assert batch_size == len(labels), "WTF?!"
 
     same_count = len([0 for l1, l2 in zip(preds, labels) if set(l1) == set(l2)])
-    return same_count / batch_size
+    return same_count / float(batch_size)
