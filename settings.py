@@ -4,7 +4,7 @@ enc_sentence_length = 15
 dec_sentence_length = 20
 batch_size = 250
 
-n_epoch = 1000
+n_epoch = 1600
 hidden_size = 150
 
 enc_emb_size = 300
